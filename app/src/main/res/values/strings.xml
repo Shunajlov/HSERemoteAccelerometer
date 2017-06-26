@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">HSE Remote Accelerometer</string>
+    <string name="accelerometer_graph">Accelerometer Graph</string>
+    <string name="gyroscope_graph">Gyroscope Graph</string>
+    <string name="send_settings">Send settings</string>
+    <string name="settings">Settings</string>
+    <string name="connection_settings">Connection settings</string>
+    <string name="restore_defaults">Restore defaults</string>
+    <string name="ip_address_port">IP Address : Port</string>
+    <string name="database_name">Database name</string>
+    <string name="password">Password</string>
+    <string name="user_name">User name</string>
+    <string name="intervals_of_data_sending">Intervals of data sending</string>
+</resources>
