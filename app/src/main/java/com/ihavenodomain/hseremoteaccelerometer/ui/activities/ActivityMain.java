@@ -1,4 +1,4 @@
-package com.ihavenodomain.hseremoteaccelerometer;
+package com.ihavenodomain.hseremoteaccelerometer.ui.activities;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -13,6 +13,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
+import com.ihavenodomain.hseremoteaccelerometer.R;
 import com.ihavenodomain.hseremoteaccelerometer.data.Const;
 import com.ihavenodomain.hseremoteaccelerometer.data.preferences.PreferencesManager;
 import com.jjoe64.graphview.GraphView;
@@ -79,6 +80,8 @@ public class ActivityMain extends AppCompatActivity implements SensorEventListen
         super.onResume();
         mSensorManager.registerListener(this, mAccelerometer, SensorManager.SENSOR_DELAY_NORMAL);
         mSensorManager.registerListener(this, mGyroscope, SensorManager.SENSOR_DELAY_NORMAL);
+
+        initSettings();
 
         String temp = getString(R.string.intervals_of_data_sending) + ": " + interval + " sec";
         tvSendIntervals.setText(temp);
@@ -222,7 +225,7 @@ public class ActivityMain extends AppCompatActivity implements SensorEventListen
         interval = manager.getInterval();
 
         if(login.equals(""))
-            manager.setLogin(Const.DEFAULT_LOGIN);
+            manager.setLogin(Const.DEFAULT_USERNAME);
         if(password.equals(""))
             manager.setPassword(Const.DEFAULT_PASSWORD);
         if(dbName.equals(""))

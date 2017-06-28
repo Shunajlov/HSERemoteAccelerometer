@@ -11,4 +11,11 @@
     <string name="password">Password</string>
     <string name="user_name">User name</string>
     <string name="intervals_of_data_sending">Intervals of data sending</string>
+    <string name="value">value…</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="default_confirm">Are you sure? All changed settings will be lost</string>
+    <string name="defaults_header">Restore defaults</string>
+    <string name="yes">Yes</string>
+    <string name="No">No</string>
 </resources>

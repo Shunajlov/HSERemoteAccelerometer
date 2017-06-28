@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ActivityMain"
+            android:name=".ui.activities.ActivityMain"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,7 +20,7 @@
         </activity>
         <activity
             android:label="@string/settings"
-            android:name=".ActivitySettings"
+            android:name=".ui.activities.ActivitySettings"
             android:screenOrientation="portrait"/>
     </application>
 
